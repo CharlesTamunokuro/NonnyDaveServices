@@ -1,0 +1,23 @@
+/* Adding professional fade-in animation for container image */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
