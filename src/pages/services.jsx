@@ -6,7 +6,7 @@ import PageHeader from '../components/PageHeader'
 import png1 from '../assets/png1.jpeg'
 import png2 from '../assets/png2.jpeg'
 import png3 from '../assets/png3.jpeg'
-
+import cleaning from '../assets/cleaning.jfif'
 const projects = [
   {
     id: 1,
@@ -170,7 +170,7 @@ const services = () => {
             </div>
             <div className="lg:w-1/2 mt-8 lg:mt-36">
               <img 
-                src={serviceimg}
+                src={cleaning}
                 alt="A construction worker welding on a building"
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
               />
