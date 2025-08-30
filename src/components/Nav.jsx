@@ -15,19 +15,19 @@ const Nav = () => {
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-         <div className="flex-shrink-0  flex items-center">
-  <img
-    src={logo} // replace with your logo path
-    alt="Logo"
-    className="h-10 w-20 rounded-full object-cover mr-2"
-  />
-  <Link to="/" className="text-2xl font-bold text-blue-900">
-    NONNY DAVE SERVICES
-  </Link>
-</div>
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 w-full">
+          {/* Logo + Company Name */}
+          <div className="flex items-center space-x-2">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-10 w-10 rounded-full object-cover"
+            />
+            <Link to="/" className="text-lg sm:text-xl font-bold text-blue-900">
+              NONNY DAVE SERVICES
+            </Link>
+          </div>
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden md:block">
@@ -47,16 +47,6 @@ const Nav = () => {
               ))}
             </div>
           </div>
-
-          {/* Action Buttons (Desktop)
-          <div className="hidden md:block">
-            <div className="ml-4 flex items-center space-x-4">
-              <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
-                Get Quote
-              </button>
-              <button className="text-gray-700 hover:text-black px-4 py-2 text-sm font-medium">Sign in</button>
-            </div>
-          </div> */}
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -103,10 +93,6 @@ const Nav = () => {
               {link.label}
             </Link>
           ))}
-          {/* <button className="bg-black text-white px-6 py-2 rounded-full text-base font-medium hover:bg-gray-800 transition-colors mt-2">
-            Get Quote
-          </button> */}
-          {/* <button className="text-gray-700 hover:text-black px-4 py-2 text-base font-medium mt-2">Sign in</button> */}
         </div>
       </div>
     </nav>
